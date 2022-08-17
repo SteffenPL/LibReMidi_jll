@@ -13,7 +13,7 @@ set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib;${JlCxx_location}")
 
 message(STATUS "Found JlCxx at ${JlCxx_location}")
 
-add_library(testlib SHARED src/demo.cpp)
+add_library(testlib SHARED src/libremidi_cxxwrap.cpp)
 
 target_link_libraries(testlib JlCxx::cxxwrap_julia)
 
